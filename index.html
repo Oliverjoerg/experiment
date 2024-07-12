@@ -23,10 +23,11 @@
 
         nav {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
+            align-items: center;
             background-color: #4CAF50;
+            padding: 1em 2em;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 1em 0;
         }
 
         nav ul {
@@ -72,7 +73,7 @@
             z-index: 1;
         }
 
-        .hero h2 {
+        .hero h1 {
             margin: 0;
             font-size: 3em;
             position: relative;
@@ -169,7 +170,7 @@
                 padding: 4em 1em;
             }
 
-            .hero h2 {
+            .hero h1 {
                 font-size: 2em;
             }
 
@@ -187,6 +188,9 @@
 
 <body>
     <nav>
+        <div class="logo">
+            <h1 style="color: white;">Parkacar</h1>
+        </div>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Us</a></li>
@@ -195,7 +199,7 @@
     </nav>
 
     <section class="hero" id="home">
-        <h2>Welcome to Parkacar</h2>
+        <h1>Welcome to Parkacar</h1>
         <p>Parkacar facilitates the sharing of private parking spaces through an easy-to-use app. Join us in making parking hassle-free and environmentally friendly!</p>
         <a href="#poll">Take Our Poll</a>
     </section>
