@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Parkacar - Revolutionizing Parking. Join us in making parking hassle-free and environmentally friendly.">
+    <meta name="keywords" content="Parkacar, parking, app, sharing economy, eco-friendly">
+    <meta name="author" content="Parkacar Team">
+    <title>Parkacar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        .hero {
+            background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 5em 1em;
+        }
+
+        .hero h2 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        .hero a {
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .hero a:hover {
+            background-color: #45a049;
+        }
+
+        section {
+            padding: 2em;
+            margin: 2em 0;
+            background-color: #f4f4f4;
+            max-width: 800px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: relative;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0.5em 0;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .feedback {
+            margin-top: 1em;
+            padding: 1em;
+            background-color: #e0ffe0;
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
+            color: #4CAF50;
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 0.5em 0;
+            }
+
+            .hero {
+                padding: 2em 1em;
+            }
+
+            .hero h2 {
+                font-size: 1.8em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            section {
+                margin: 1em;
+                padding: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Parkacar</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#poll">Poll</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>Welcome to Parkacar</h2>
+        <p>Parkacar facilitates the sharing of private parking spaces through an easy-to-use app. Join us in making parking hassle-free and environmentally friendly!</p>
+        <a href="#poll">Take Our Poll</a>
+    </section>
+
+    <section id="about">
+        <h2>About Parkacar</h2>
+        <p>Parkacar aims to revolutionize parking by allowing property owners to share their unused parking spaces. Our vision is to create a hassle-free parking experience for everyone while reducing the environmental impact of parking searches. Our team is dedicated to providing innovative solutions and excellent service to our users.</p>
+        <p>We are committed to sustainability and efficiency. By making better use of existing parking spaces, we help reduce the need for new parking structures and contribute to lower CO2 emissions. Our app also aims to support electric vehicle users by planning to include charging station availability in the future.</p>
+        <p>Meet our dedicated team of professionals who are working hard to make Parkacar a success:</p>
+        <ul>
+            <li><strong>Oliver Joergensen:</strong> Co-Founder & CEO</li>
+            <li><strong>Thomas Ulmi:</strong> Co-Founder & CTO</li>
+            <li><strong>Anna Müller:</strong> Head of Marketing</li>
+            <li><strong>Stefan Meier:</strong> Lead Developer</li>
+        </ul>
+    </section>
+
+    <section id="poll">
+        <h2>Parkacar Interest Poll</h2>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeeSf4zUrqKsHVXIAbdT00MXqw7uCRamiHsniZjwmv5jwbhww/viewform?embedded=true" width="640" height="652" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="contactFeedback" class="feedback"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Parkacar. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:info@parkacar.com">info@parkacar.com</a></p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+            var contactFeedback = document.getElementById('contactFeedback');
+            contactFeedback.innerText = 'Thank you, ' + name + '! Your message has been sent.';
+            contactFeedback.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
