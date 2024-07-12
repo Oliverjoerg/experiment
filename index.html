@@ -84,10 +84,9 @@
 
         section {
             padding: 2em;
-            margin: 2em 0;
+            margin: 2em auto;
             background-color: #f4f4f4;
             max-width: 800px;
-            margin: auto;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
@@ -101,7 +100,6 @@
             color: white;
             text-align: center;
             padding: 1em 0;
-            position: relative;
             width: 100%;
         }
 
@@ -112,16 +110,6 @@
         footer a {
             color: #4CAF50;
             text-decoration: none;
-        }
-
-        .feedback {
-            margin-top: 1em;
-            padding: 1em;
-            background-color: #e0ffe0;
-            border: 1px solid #4CAF50;
-            border-radius: 5px;
-            color: #4CAF50;
-            display: none;
         }
 
         @media (max-width: 768px) {
@@ -162,7 +150,6 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#poll">Poll</a></li>
-            <li><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
 
@@ -190,35 +177,9 @@
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeeSf4zUrqKsHVXIAbdT00MXqw7uCRamiHsniZjwmv5jwbhww/viewform?embedded=true" width="640" height="652" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form id="contactForm">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" required></textarea><br>
-            <button type="submit">Submit</button>
-        </form>
-        <div id="contactFeedback" class="feedback"></div>
-    </section>
-
     <footer>
         <p>&copy; 2024 Parkacar. All rights reserved.</p>
         <p>Contact us at <a href="mailto:info@parkacar.com">info@parkacar.com</a></p>
     </footer>
-
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
-            var message = document.getElementById('message').value;
-            var contactFeedback = document.getElementById('contactFeedback');
-            contactFeedback.innerText = 'Thank you, ' + name + '! Your message has been sent.';
-            contactFeedback.style.display = 'block';
-        });
-    </script>
 </body>
 </html>
